@@ -20,7 +20,7 @@ function Login() {
             />
           </form>
           <button class="loginSubmit">
-            <a href="#">Log in</a>
+            <a href="/">Log in</a>
           </button>
         </div>
       </div>
