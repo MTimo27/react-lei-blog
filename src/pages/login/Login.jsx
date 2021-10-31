@@ -4,22 +4,22 @@ import './login.css';
 function Login() {
   return (
     <div>
-      <div class="wrapper">
-        <div class="login">
-          <h1 class="loginTitle">Log in</h1>
-          <form class="loginForm">
+      <div className="wrapper">
+        <div className="login">
+          <h1 className="loginTitle">Log in</h1>
+          <form className="loginForm">
             <input
-              class="loginUnsername"
+              className="loginUnsername"
               type="text"
               placeholder="Username"
             />
             <input
-              class="loginPassword"
+              className="loginPassword"
               type="password"
               placeholder="Parola"
             />
           </form>
-          <button class="loginSubmit">
+          <button className="loginSubmit">
             <a href="/">Log in</a>
           </button>
         </div>

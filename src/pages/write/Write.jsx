@@ -3,7 +3,7 @@ import './write.css';
 
 function Write() {
   return (
-    <div class="wrapper">
+    <div class="wrapperWrite">
       <div class="write">
         <div class="writeImg">
           <img

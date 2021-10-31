@@ -1,22 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-
-:root {
-  font-size: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #4169e1;
 }
 
 .wrapper {
@@ -74,10 +58,4 @@ body {
   color: #fff;
   border: 0;
   padding: 0.8em 1em 0.8em 1em;
-}
-
-@media only screen and (min-width: 600px) {
-  :root {
-    font-size: 22px;
-  }
 }
