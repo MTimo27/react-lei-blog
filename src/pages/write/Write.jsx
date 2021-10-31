@@ -3,19 +3,19 @@ import './write.css';
 
 function Write() {
   return (
-    <div class="wrapperWrite">
-      <div class="write">
-        <div class="writeImg">
+    <div className="wrapperWrite">
+      <div className="write">
+        <div className="writeImg">
           <img
             src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt=""
           />
         </div>
 
-        <form class="writeForm">
-          <div class="writeFormGroup">
+        <form className="writeForm">
+          <div className="writeFormGroup">
             {/* <label htmlFor="fileInput" style="display: none">
-            <i class="writeIcon fas fa-plus"></i>
+            <i className="writeIcon fas fa-plus"></i>
           </label>
           <input
             id="fileInput"
@@ -23,21 +23,21 @@ function Write() {
             style="display: none"
           />  */}
             <input
-              class="writeInput"
+              className="writeInput"
               placeholder="Titlu"
               type="text"
-              autofocus="{true}"
+              autoFocus="{true}"
             />
           </div>
-          <div class="writeFormGroup">
+          <div className="writeFormGroup">
             <textarea
-              class="writeInput writeText"
+              className="writeInput writeText"
               placeholder="Incepe articolul..."
               type="text"
-              autofocus="{true}"
+              autoFocus="{true}"
             ></textarea>
           </div>
-          <button class="writeSubmit" type="submit">
+          <button className="writeSubmit" type="submit">
             Posteaza
           </button>
         </form>

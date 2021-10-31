@@ -65,9 +65,9 @@ function Header() {
           {[
             { label: 'Home', path: '/' },
             { label: 'Scrie', path: '/write' },
-            { label: 'Despre noi', path: '/' },
-            { label: 'Proiecte', path: '/' },
-            { label: 'Contact', path: '/' },
+            { label: 'Despre noi', path: '/about' },
+            { label: 'Proiecte', path: '/projects' },
+            { label: 'Contact', path: '/contact' },
             { label: 'Log out', path: '/' },
           ].map(navItemsMap)}
         </ul>
