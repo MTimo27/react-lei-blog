@@ -8,36 +8,42 @@ function Home() {
     <>
       <section class="hero">
         <div class="heroContainer">
-          <div class="heroTitle">
-            <h1>Liga Elevilor din Iaşi</h1>
+          <div className="heroFirst">
+            <div class="heroTitle">
+              <h1>Liga Elevilor din Iaşi</h1>
+            </div>
+            <div class="heroText">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.
+              </p>
+            </div>
+            <div className="heroButton">
+              <button>
+                <a href="#">Despre noi</a>
+              </button>
+            </div>
           </div>
 
-          <div class="heroText">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam.
-            </p>
-          </div>
-
-          <a href="#">
-            <button class="heroButton">Despre noi</button>
-          </a>
-          <div className="heroImgContainer">
+          <div className="heroSecond">
             <img src={heroImg} alt="" className="heroImg" />
           </div>
         </div>
       </section>
-      {/* <div className="articles">
-        <div className="articlesTitle">
-          <h2>Articole</h2>
+      <section className="articles">
+        <div className="articlesContainer">
+          <div className="articlesTitle">
+            <h2>Articole</h2>
+          </div>
+          <div className="articlesCards">
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div> */}
+      </section>
     </>
   );
 }

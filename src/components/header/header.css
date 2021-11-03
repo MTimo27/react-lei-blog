@@ -33,12 +33,14 @@ a {
 .nav-logo {
   display: flex;
   align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
 }
 
-.nav-img {
+/* .nav-img {
   width: 2rem;
   border-radius: 1rem;
-}
+} */
 
 .nav-menu {
   position: fixed;

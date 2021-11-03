@@ -55,7 +55,8 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <Link to="/" className="nav-logo">
-          <img src={logo} alt="logo" className="nav-img" />
+          {/* <img src={logo} alt="logo" className="nav-img" /> */}
+          <h1>LEI</h1>
         </Link>
         <ul
           className={`nav-menu ${
