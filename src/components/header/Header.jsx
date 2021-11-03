@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import logo from '../../utils/images/logo.jpg';
 
 function Header() {
   const [isActive, toggle] = useState(false);
@@ -54,7 +55,7 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <Link to="/" className="nav-logo">
-          LEI
+          <img src={logo} alt="logo" className="nav-img" />
         </Link>
         <ul
           className={`nav-menu ${

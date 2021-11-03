@@ -9,7 +9,8 @@ a {
 
 .header {
   width: 100vw;
-  border-bottom: 1px solid #e2e8f0;
+  background-color: transparent;
+  /* border-bottom: 1px solid #e2e8f0; */
 }
 
 .navbar {
@@ -27,6 +28,16 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-img {
+  width: 2rem;
+  border-radius: 1rem;
 }
 
 .nav-menu {
