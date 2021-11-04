@@ -1,0 +1,83 @@
+.about {
+  max-width: 100%;
+  padding: 7% 7%;
+}
+
+@media only screen and (min-width: 750px) {
+  .about {
+    padding: 2% 2%;
+  }
+}
+
+/*==============
+BOARD SECTION
+===============*/
+
+.aboutContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutTitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  letter-spacing: 2.5px;
+  padding-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.aboutAvatars {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(15rem, max-content)
+  );
+  grid-gap: 1.5rem;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .aboutAvatars {
+    grid-template-columns: repeat(
+      3,
+      minmax(15rem, max-content)
+    );
+  }
+}
+
+.aboutAvatar {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutAvatarImg {
+  display: inline-block;
+  position: relative;
+  max-width: 10rem;
+  max-height: 10rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.aboutAvatarImg img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+.aboutAvatarName {
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  padding: 0.3rem 0 0 0;
+  text-align: center;
+}
