@@ -3,6 +3,8 @@ import Card from '../../components/card/Card';
 import './home.css';
 import heroImg from '../../utils/images/hero2.png';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -33,6 +35,21 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className="social">
+        <div className="socialTitle">
+          <h2>Urmareste-ne si pe social media</h2>
+        </div>
+        <div className="socialContainer">
+          <div className="socialIcon">
+            <FaFacebook />
+          </div>
+          <div className="socialIcon">
+            <FaInstagram />
+          </div>
+        </div>
+      </section>
+
       <section className="articles">
         <div className="articlesContainer">
           <div className="articlesTitle">
@@ -45,6 +62,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

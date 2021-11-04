@@ -1,0 +1,45 @@
+footer {
+  background-color: #002444;
+  color: #fff;
+  padding: 7% 7%;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 750px) {
+  footer {
+    padding: 2% 2%;
+  }
+}
+
+.footerContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerButton button {
+  font-weight: 580;
+  font-size: 1rem;
+  line-height: 2rem;
+  background-color: #fff;
+  color: #002444;
+  border: 3px solid #c48e24;
+  border-radius: 2rem;
+  letter-spacing: 0.05em;
+  padding: 0.2em 1em;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+}
+
+.footerCredit {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.heartIcon {
+  font-size: 15px;
+}
