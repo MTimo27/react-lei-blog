@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../../components/card/Card';
 import './home.css';
 import heroImg from '../../utils/images/hero2.png';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -22,7 +23,7 @@ function Home() {
             </div>
             <div className="heroButton">
               <button>
-                <a href="#">Despre noi</a>
+                <Link>Despre noi</Link>
               </button>
             </div>
           </div>
