@@ -10,16 +10,14 @@ function Footer() {
         <div className="footerContainer">
           <div className="footerButton">
             <button>
-              <Link>Contact</Link>
+              <Link to="/contact">Contact</Link>
             </button>
           </div>
 
           <div className="footerCredit">
             <p>
-              Made with <FaHeart className="heartIcon" /> by
-              <Link>Mihai Timoficiuc</Link>
-              <br />
-              &copy; All rights reserved LEI
+              &copy; All rights reserved <br />
+              Liga Elevilor din Iaşi
             </p>
           </div>
         </div>

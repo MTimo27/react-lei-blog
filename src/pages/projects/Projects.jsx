@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/footer/Footer';
 import './projects.css';
 
 function Projects() {
@@ -6,7 +7,9 @@ function Projects() {
     <>
       <section className="projects">
         <div className="projectsContainer">
-          <div className="projectsTitle">Proiecte</div>
+          <div className="projectsTitle">
+            <h1>Proiecte</h1>
+          </div>
           <div className="projectsText">
             Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Dolorum, odit. Beatae cumque a
@@ -20,6 +23,7 @@ function Projects() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -4,18 +4,18 @@ import './home.css';
 import heroImg from '../../utils/images/hero2.png';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/Footer';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import Social from '../../components/social/Social';
 
 function Home() {
   return (
     <>
-      <section class="hero">
-        <div class="heroContainer">
+      <section className="hero">
+        <div className="heroContainer">
           <div className="heroFirst">
-            <div class="heroTitle">
+            <div className="heroTitle">
               <h1>Liga Elevilor din Iaşi</h1>
             </div>
-            <div class="heroText">
+            <div className="heroText">
               <p>
                 Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor
@@ -25,7 +25,7 @@ function Home() {
             </div>
             <div className="heroButton">
               <button>
-                <Link>Despre noi</Link>
+                <Link to="/about">Despre noi</Link>
               </button>
             </div>
           </div>
@@ -36,19 +36,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="social">
-        <div className="socialTitle">
-          <h2>Urmareste-ne si pe social media</h2>
-        </div>
-        <div className="socialContainer">
-          <div className="socialIcon">
-            <FaFacebook />
-          </div>
-          <div className="socialIcon">
-            <FaInstagram />
-          </div>
-        </div>
-      </section>
+      <Social />
 
       <section className="articles">
         <div className="articlesContainer">

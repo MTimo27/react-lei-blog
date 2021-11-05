@@ -1,11 +1,3 @@
-a {
-  color: inherit !important;
-  text-decoration: none !important;
-  width: inherit !important;
-  height: inherit !important;
-  display: block !important;
-}
-
 /*==============
 HERO SECTION
 ===============*/
@@ -98,54 +90,6 @@ HERO SECTION
 
 .heroImg {
   width: 10rem;
-}
-
-/*==============
-SOCIAL SECTION
-===============*/
-
-.social {
-  max-width: 100%;
-  padding: 7% 7% 0 7%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-@media only screen and (min-width: 750px) {
-  .social {
-    padding: 2% 2% 0 2%;
-  }
-}
-
-.socialTitle {
-  max-width: 80%;
-  font-size: 1rem;
-  line-height: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.socialContainer {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-
-.socialIcon {
-  display: flex;
-  color: #fff;
-  background-color: #c2912a;
-  font-size: 2rem;
-  padding: 0.8rem;
-  border-radius: 2rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 /*==============

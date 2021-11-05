@@ -1,16 +1,7 @@
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .header {
   width: 100vw;
   background-color: transparent;
-  /* border-bottom: 1px solid #e2e8f0; */
+  border-bottom: 2px solid #e2e8f0;
 }
 
 .navbar {
@@ -112,12 +103,12 @@ a {
   }
 
   .nav-link:hover {
-    color: #482ff7;
+    color: #002444;
   }
 
   .nav-logo {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #482ff7;
+    color: #002444;
   }
 }
