@@ -1,0 +1,41 @@
+/*REFACTORRRRRRRRRRRRRRRRRRRRR
+TE REPETI AIUREA PUNE TOT IN INDEX.CSS IDK */
+
+.projects {
+  max-width: 100%;
+  padding: 7% 7%;
+}
+
+@media only screen and (min-width: 750px) {
+  .projects {
+    padding: 2% 2%;
+  }
+}
+
+.projectsContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsTitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  letter-spacing: 2.5px;
+  padding-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.projectsText {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .projectsText {
+    max-width: 70%;
+  }
+}
