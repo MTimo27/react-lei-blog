@@ -3,7 +3,6 @@ import Card from '../../components/card/Card';
 import './home.css';
 import heroImg from '../../utils/images/hero2.png';
 import { Link } from 'react-router-dom';
-import Footer from '../../components/footer/Footer';
 import Social from '../../components/social/Social';
 
 function Home() {
@@ -50,7 +49,6 @@ function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

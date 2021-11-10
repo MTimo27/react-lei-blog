@@ -1,6 +1,5 @@
 import React from 'react';
 import './article.css';
-import Footer from '../../components/footer/Footer';
 
 function Article() {
   return (
@@ -62,7 +61,6 @@ function Article() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

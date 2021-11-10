@@ -9,24 +9,36 @@ import {
   Projects,
 } from './pages';
 import { Route, Switch } from 'react-router';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/article" component={Article} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/login" component={Login} />
-        <Route
-          exact
-          path="/projects"
-          component={Projects}
-        />
-        <Route exact path="/write" component={Write} />
-      </Switch>
+      <div className="mainWrapper">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route
+            exact
+            path="/article"
+            component={Article}
+          />
+          <Route
+            exact
+            path="/contact"
+            component={Contact}
+          />
+          <Route exact path="/login" component={Login} />
+          <Route
+            exact
+            path="/projects"
+            component={Projects}
+          />
+          <Route exact path="/write" component={Write} />
+        </Switch>
+      </div>
+      <Footer />
     </>
   );
 }

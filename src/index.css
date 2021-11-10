@@ -26,3 +26,13 @@ a {
 li {
   list-style: none;
 }
+
+.mainWrapper {
+  min-height: calc(100vh - 107px);
+}
+
+@media only screen and (min-width: 750px) {
+  .mainWrapper {
+    min-height: calc(100vh - 171px);
+  }
+}

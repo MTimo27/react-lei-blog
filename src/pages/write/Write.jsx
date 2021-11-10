@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../components/footer/Footer';
 import './write.css';
 
 function Write() {
@@ -45,7 +44,6 @@ function Write() {
           </form>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

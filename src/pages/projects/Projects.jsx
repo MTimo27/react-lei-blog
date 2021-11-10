@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../components/footer/Footer';
 import './projects.css';
 
 function Projects() {
@@ -23,7 +22,6 @@ function Projects() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

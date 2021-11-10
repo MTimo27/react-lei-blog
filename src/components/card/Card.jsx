@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cardImg from '../../utils/images/cardImg.jpg';
 import './card.css';
 
 function Card() {
   return (
     <div className="cardContainer">
       <Link to="/article">
-        <img
-          src="https://scontent.fias1-1.fna.fbcdn.net/v/t39.30808-6/246622375_339500504613057_6302165414286729866_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=jAmK10c2n7kAX-Py5sy&_nc_ht=scontent.fias1-1.fna&oh=28017c110fed829923f1973e4b48e2ad&oe=6187E572"
-          alt=""
-        />
+        <img src={cardImg} alt="" />
 
         <div className="cardBody">
           <div className="cardDate">
