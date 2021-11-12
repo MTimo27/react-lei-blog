@@ -64,12 +64,12 @@ function Header() {
           ref={navRef}
         >
           {[
-            { label: 'Home', path: '/' },
-            { label: 'Scrie', path: '/write' },
+            { label: 'Acasa', path: '/' },
+            // { label: 'Scrie', path: '/write' },
             { label: 'Despre noi', path: '/about' },
             { label: 'Proiecte', path: '/projects' },
             { label: 'Contact', path: '/contact' },
-            { label: 'Log out', path: '/' },
+            // { label: 'Log out', path: '/' },
           ].map(navItemsMap)}
         </ul>
 
