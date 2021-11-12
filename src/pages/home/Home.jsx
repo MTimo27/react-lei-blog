@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../../components/card/Card';
 import './home.css';
 import heroImg from '../../utils/images/hero2.png';
 import { Link } from 'react-router-dom';
 import Social from '../../components/social/Social';
+import { db } from '../../firebase';
+import { collection, getDocs } from '@firebase/firestore';
 
 function Home() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const fetchIt = async () => {
+      const querySnapshot = await getDocs(
+        collection(db, 'articles')
+      );
+
+      setArticles(
+        querySnapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }))
+      );
+    };
+
+    fetchIt();
+  }, []);
   return (
     <>
       <section className="hero">
@@ -43,9 +63,9 @@ function Home() {
             <h2>Articole</h2>
           </div>
           <div className="articlesCards">
-            <Card />
-            <Card />
-            <Card />
+            {articles.map((article) => (
+              <Card article={article} />
+            ))}
           </div>
         </div>
       </section>

@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 import cardImg from '../../utils/images/cardImg.jpg';
 import './card.css';
 
-function Card() {
+function Card({ article }) {
+  const { title, date, thumbnail, id } = article;
+
   return (
     <div className="cardContainer">
-      <Link to="/article">
-        <img src={cardImg} alt="" />
+      <Link to={'/article/' + id}>
+        <img src={thumbnail} alt="" />
 
         <div className="cardBody">
           <div className="cardDate">
-            <p>12.10.2021</p>
+            <p>{date}</p>
           </div>
           <div className="cardTitle">
-            <h1>
-              100 DE ANI DE LA NASTEREA REGELUI MIHAI I
-            </h1>
+            <h1>{title}</h1>
             <hr />
           </div>
 
@@ -30,10 +30,7 @@ function Card() {
               continent.....
             </p>
           </div>
-          <div className="cardLink">
-            Citeste mai mult
-            {/* <img src="/" alt="" /> */}
-          </div>
+          <div className="cardLink">Citeste mai mult</div>
         </div>
       </Link>
     </div>

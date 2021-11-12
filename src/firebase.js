@@ -1,9 +1,10 @@
 import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';
 import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyACTNO46SdMVbR9QEuWPIFo11iAPYJLtp8',
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: 'lei-blog-1ba86.firebaseapp.com',
   projectId: 'lei-blog-1ba86',
   storageBucket: 'lei-blog-1ba86.appspot.com',
@@ -15,6 +16,8 @@ const firebaseConfig = {
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 const firebase = initializeApp(firebaseConfig);
-export const baseUrl = 'gs://lei-blog-1ba86.appspot.com/';
+
 export const db = getFirestore();
+export const storage = getStorage();
+
 export default firebase;

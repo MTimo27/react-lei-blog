@@ -8,10 +8,16 @@ import {
   Contact,
   Projects,
 } from './pages';
-import { Route, Switch } from 'react-router';
+import { Route, Switch, useLocation } from 'react-router';
 import Footer from './components/footer/Footer';
+import { useEffect } from 'react';
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <div className="mainWrapper">
@@ -21,7 +27,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route
             exact
-            path="/article"
+            path="/article/:id"
             component={Article}
           />
           <Route

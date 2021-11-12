@@ -1,7 +1,14 @@
+.headerSpace {
+  height: 64px;
+}
+
 .header {
   width: 100vw;
-  background-color: transparent;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
   border-bottom: 2px solid #e2e8f0;
+  z-index: 999;
 }
 
 .navbar {
