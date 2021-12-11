@@ -10,12 +10,16 @@ function Social() {
           <h2>Urmareste-ne si pe social media</h2>
         </div>
         <div className="socialContainer">
-          <div className="socialIcon">
-            <FaFacebook />
-          </div>
-          <div className="socialIcon">
-            <FaInstagram />
-          </div>
+          <a href="https://www.facebook.com">
+            <div className="socialIcon">
+              <FaFacebook />
+            </div>
+          </a>
+          <a href="https://www.facebook.com">
+            <div className="socialIcon">
+              <FaInstagram />
+            </div>
+          </a>
         </div>
       </section>
     </>

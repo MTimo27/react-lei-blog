@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  Children,
+  useEffect,
+  useState,
+} from 'react';
 import Card from '../../components/card/Card';
 import './home.css';
 import heroImg from '../../utils/images/hero2.png';
@@ -63,9 +67,11 @@ function Home() {
             <h2>Articole</h2>
           </div>
           <div className="articlesCards">
-            {articles.map((article) => (
-              <Card article={article} />
-            ))}
+            {Children.toArray(
+              articles.map((article) => (
+                <Card article={article} />
+              ))
+            )}
           </div>
         </div>
       </section>

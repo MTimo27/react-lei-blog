@@ -20,7 +20,6 @@ function Article() {
   const { id } = useParams();
 
   useEffect(() => {
-    console.log('here starting..');
     const fetchBody = async (bodyUrl) => {
       const mdRef = ref(storage, bodyUrl);
       const url = await getDownloadURL(mdRef);
@@ -55,7 +54,7 @@ function Article() {
             <h1>{article.title}</h1>
           </div>
 
-          <div className="articleText firstLetter">
+          <div className="articleText">
             <Markdown>{articleBody}</Markdown>
           </div>
         </div>

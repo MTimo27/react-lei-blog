@@ -92,6 +92,10 @@
   padding-bottom: 2rem;
 }
 
+.articleText img {
+  max-width: 100%;
+}
+
 .articleText.firstLetter p::first-letter {
   font-size: 250%;
   font-family: 'Playfair Display', serif;
