@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   collection,
   doc,
   getDoc,
-  getDocs,
 } from '@firebase/firestore';
-import { useEffect } from 'react/cjs/react.development';
-import { db, baseUrl, storage } from '../../firebase';
+import { db, storage } from '../../firebase';
 import './article.css';
 import { useParams } from 'react-router';
 import { getDownloadURL, ref } from '@firebase/storage';
@@ -22,19 +20,17 @@ function Article() {
   const { id } = useParams();
 
   useEffect(() => {
+    console.log('here starting..');
     const fetchBody = async (bodyUrl) => {
       const mdRef = ref(storage, bodyUrl);
       const url = await getDownloadURL(mdRef);
-
       const res = await axios.get(url);
-
       setArticleBody(res.data);
     };
 
     const fetch = async () => {
       try {
         const snapshot = await getDoc(doc(articlesRef, id));
-
         setArticle(snapshot.data());
         fetchBody(snapshot.data().body);
       } catch (err) {

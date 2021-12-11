@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cardImg from '../../utils/images/cardImg.jpg';
 import './card.css';
 
 function Card({ article }) {
-  const { title, date, thumbnail, id } = article;
+  const { title, date, thumbnail, id, overview } = article;
 
   return (
     <div className="cardContainer">
@@ -21,14 +20,7 @@ function Card({ article }) {
           </div>
 
           <div className="cardDescription">
-            <p>
-              Se împlinește astăzi un veac de la nașterea
-              ultimului Rege al românilor, Mihai I, singura
-              personalitate autohtonă după Marea Unire care
-              a rămas în istoria europeană ca un autentic
-              făuritor de act salvator pentru țară și
-              continent.....
-            </p>
+            <p>{overview}</p>
           </div>
           <div className="cardLink">Citeste mai mult</div>
         </div>
