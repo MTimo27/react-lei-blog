@@ -74,7 +74,7 @@ function Header() {
             ref={navRef}
           >
             {[
-              { label: 'Acasa', path: '/' },
+              { label: 'Acasă', path: '/' },
               // { label: 'Scrie', path: '/write' },
               { label: 'Despre noi', path: '/about' },
               { label: 'Proiecte', path: '/projects' },

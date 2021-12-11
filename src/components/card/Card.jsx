@@ -22,7 +22,7 @@ function Card({ article }) {
           <div className="cardDescription">
             <p>{overview}</p>
           </div>
-          <div className="cardLink">Citeste mai mult</div>
+          <div className="cardLink">Citește mai mult</div>
         </div>
       </Link>
     </div>
