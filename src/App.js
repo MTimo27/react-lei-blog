@@ -11,11 +11,12 @@ import {
 } from './pages';
 
 function App() {
+  //Resets the scrolling when you click on a new page
   const { pathname } = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
   return (
     <>
       <div className="mainWrapper">

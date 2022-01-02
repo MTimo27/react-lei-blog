@@ -10,13 +10,14 @@ import heroImg from '../images/hero.png';
 import { Link } from 'react-router-dom';
 import { db } from '../firebase';
 import { collection, getDocs } from '@firebase/firestore';
+import Spinner from '../components/Spinner';
 
 function Home() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const fetchIt = async () => {
+    const data = async () => {
       const querySnapshot = await getDocs(
         collection(db, 'articles')
       );
@@ -27,7 +28,7 @@ function Home() {
         }))
       );
     };
-    fetchIt();
+    data();
     setLoading(true);
   }, []);
   return (
@@ -52,16 +53,19 @@ function Home() {
               </button>
             </div>
           </div>
-
           <div className="heroSecond">
-            <img src={heroImg} alt="" className="heroImg" />
+            <img
+              src={heroImg}
+              alt="LEI Logo"
+              className="heroImg"
+            />
           </div>
         </div>
       </section>
 
       <Social />
-      {loading || articles ? (
-        <section className="articles">
+      <section className="articles">
+        {loading || articles ? (
           <div className="articlesContainer">
             <div className="articlesTitle">
               <h2>Articole</h2>
@@ -74,19 +78,10 @@ function Home() {
               )}
             </div>
           </div>
-        </section>
-      ) : (
-        <section className="articles">
-          <div className="spinner">
-            <div className="lds-ellipsis">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </section>
-      )}
+        ) : (
+          <Spinner />
+        )}
+      </section>
     </>
   );
 }

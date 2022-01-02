@@ -4,12 +4,6 @@ footer {
   padding: 2rem 2rem;
 }
 
-/* @media only screen and (min-width: 750px) {
-  footer {
-    padding: 2% 2%;
-  }
-} */
-
 .footerContainer {
   max-width: 100%;
   display: flex;
@@ -36,8 +30,4 @@ footer {
   width: 100%;
   font-size: 1rem;
   text-align: center;
-}
-
-.heartIcon {
-  font-size: 15px;
 }

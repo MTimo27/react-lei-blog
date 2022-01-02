@@ -20,7 +20,7 @@ function Social() {
             </div>
           </a>
           <a
-            href="https://www.instagram.com/ligaeleviloriasi/"
+            href="https://www.instagram.com/ligaeleviloriasi"
             rel="noreferrer"
             target="_blank"
           >

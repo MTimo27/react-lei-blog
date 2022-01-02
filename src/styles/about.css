@@ -9,10 +9,6 @@
   }
 }
 
-/*==============
-DESCRIPTION SECTION
-===============*/
-
 .aboutContainer {
   max-width: 100%;
   display: flex;
@@ -40,10 +36,6 @@ DESCRIPTION SECTION
     max-width: 70%;
   }
 }
-
-/*==============
-BOARD SECTION
-===============*/
 
 .aboutAvatars {
   width: 100%;

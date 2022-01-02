@@ -22,34 +22,23 @@ function Contact() {
               vitae eveniet cumque aspernatur incidunt vero.
             </p>
             <p>
-              <span style={{ fontWeight: 900 }}>
-                Ana Sturzu
-              </span>{' '}
-              - Presedinte
+              <span className="bold">Ana Sturzu</span> -
+              Presedinte
             </p>
             <p>
-              <span style={{ fontWeight: 900 }}>
-                Telefon:
-              </span>{' '}
+              <span className="bold">Telefon: </span>
               0172637181
             </p>
             <p>
-              <span style={{ fontWeight: 900 }}>
-                Rebeca Raicu
-              </span>{' '}
-              - Vicepresedinte
+              <span className="bold">Rebeca Raicu</span> -
+              Vicepresedinte
             </p>
             <p>
-              <span style={{ fontWeight: 900 }}>
-                Telefon:
-              </span>{' '}
+              <span className="bold">Telefon: </span>
               9181228347
             </p>
             <p>
-              {' '}
-              <span style={{ fontWeight: 900 }}>
-                Email:{' '}
-              </span>
+              <span className="bold">Email: </span>
               lei@gmail.com
             </p>
           </div>

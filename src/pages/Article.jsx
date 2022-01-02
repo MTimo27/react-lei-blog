@@ -39,12 +39,15 @@ function Article() {
     fetch();
   }, [id]);
 
-  if (isError) return <div>404 Not found</div>;
-
   return (
     <>
-      {!article || !articleBody ? (
-        <section className="article">
+      <section className="article">
+        {isError ? (
+          <div>404 Articolul nu a fost gasit</div>
+        ) : (
+          ''
+        )}
+        {!article || !articleBody ? (
           <div className="spinner width">
             <div className="lds-ellipsis">
               <div></div>
@@ -53,23 +56,26 @@ function Article() {
               <div></div>
             </div>
           </div>
-        </section>
-      ) : (
-        <section className="article">
-          <div className="articleImg">
-            <img src={article.thumbnail} alt="thumbnail" />
-          </div>
-          <div className="articleContainer">
-            <div className="articleTitle">
-              <h1>{article.title}</h1>
+        ) : (
+          <>
+            <div className="articleImg">
+              <img
+                src={article.thumbnail}
+                alt="thumbnail"
+              />
             </div>
+            <div className="articleContainer">
+              <div className="articleTitle">
+                <h1>{article.title}</h1>
+              </div>
 
-            <div className="articleText">
-              <Markdown>{articleBody}</Markdown>
+              <div className="articleText">
+                <Markdown>{articleBody}</Markdown>
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </>
+        )}
+      </section>
     </>
   );
 }
