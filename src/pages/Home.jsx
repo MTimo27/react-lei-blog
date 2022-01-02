@@ -3,12 +3,12 @@ import React, {
   useEffect,
   useState,
 } from 'react';
-import Card from '../../components/card/Card';
-import './home.css';
-import heroImg from '../../utils/images/hero2.png';
+import Card from '../components/Card';
+import Social from '../components/Social';
+import '../styles/home.css';
+import heroImg from '../images/hero.png';
 import { Link } from 'react-router-dom';
-import Social from '../../components/social/Social';
-import { db } from '../../firebase';
+import { db } from '../firebase';
 import { collection, getDocs } from '@firebase/firestore';
 
 function Home() {

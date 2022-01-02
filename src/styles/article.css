@@ -92,6 +92,10 @@
   padding-bottom: 2rem;
 }
 
+.articleText p {
+  padding: 0.5em 0 0.5em 0;
+}
+
 .articleText img {
   max-width: 100%;
 }

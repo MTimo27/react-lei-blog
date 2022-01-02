@@ -4,8 +4,8 @@ import {
   doc,
   getDoc,
 } from '@firebase/firestore';
-import { db, storage } from '../../firebase';
-import './article.css';
+import { db, storage } from '../firebase';
+import '../styles/article.css';
 import { useParams } from 'react-router';
 import { getDownloadURL, ref } from '@firebase/storage';
 import Markdown from 'markdown-to-jsx';

@@ -1,5 +1,5 @@
 import React from 'react';
-import './social.css';
+import '../styles/social.css';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Social() {

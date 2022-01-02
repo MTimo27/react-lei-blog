@@ -1,16 +1,14 @@
-import Header from './components/header/Header';
+import { Route, Switch, useLocation } from 'react-router';
+import { useEffect } from 'react';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import {
-  Write,
-  Login,
   Home,
   About,
   Article,
   Contact,
   Projects,
 } from './pages';
-import { Route, Switch, useLocation } from 'react-router';
-import Footer from './components/footer/Footer';
-import { useEffect } from 'react';
 
 function App() {
   const { pathname } = useLocation();
@@ -35,13 +33,11 @@ function App() {
             path="/contact"
             component={Contact}
           />
-          <Route exact path="/login" component={Login} />
           <Route
             exact
             path="/projects"
             component={Projects}
           />
-          <Route exact path="/write" component={Write} />
         </Switch>
       </div>
       <Footer />
