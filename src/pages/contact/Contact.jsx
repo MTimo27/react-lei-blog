@@ -12,6 +12,16 @@ function Contact() {
           </div>
           <div className="contactText">
             <p>
+              Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Sunt voluptatum molestiae
+              minus. Ipsam perspiciatis cum repudiandae
+              debitis, sapiente error ratione quod beatae
+              quos maxime? Obcaecati repellendus nihil hic
+              molestias et ab aperiam quasi, nam ipsum dolor
+              eum est ad odio magnam fugiat distinctio illum
+              vitae eveniet cumque aspernatur incidunt vero.
+            </p>
+            <p>
               <span style={{ fontWeight: 900 }}>
                 Ana Sturzu
               </span>{' '}

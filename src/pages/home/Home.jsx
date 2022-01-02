@@ -13,22 +13,22 @@ import { collection, getDocs } from '@firebase/firestore';
 
 function Home() {
   const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchIt = async () => {
       const querySnapshot = await getDocs(
         collection(db, 'articles')
       );
-
       setArticles(
-        querySnapshot.docs.map((doc) => ({
+        querySnapshot.docs.reverse().map((doc) => ({
           ...doc.data(),
           id: doc.id,
         }))
       );
     };
-
     fetchIt();
+    setLoading(true);
   }, []);
   return (
     <>
@@ -60,21 +60,33 @@ function Home() {
       </section>
 
       <Social />
-
-      <section className="articles">
-        <div className="articlesContainer">
-          <div className="articlesTitle">
-            <h2>Articole</h2>
+      {loading || articles ? (
+        <section className="articles">
+          <div className="articlesContainer">
+            <div className="articlesTitle">
+              <h2>Articole</h2>
+            </div>
+            <div className="articlesCards">
+              {Children.toArray(
+                articles.map((article) => (
+                  <Card article={article} />
+                ))
+              )}
+            </div>
           </div>
-          <div className="articlesCards">
-            {Children.toArray(
-              articles.map((article) => (
-                <Card article={article} />
-              ))
-            )}
+        </section>
+      ) : (
+        <section className="articles">
+          <div className="spinner">
+            <div className="lds-ellipsis">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 }
