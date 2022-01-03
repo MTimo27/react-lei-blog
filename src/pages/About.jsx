@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/about.css';
 import Andreea from '../images/Andreea Cozma.jpeg';
 import Rebeca from '../images/Rebeca Raicu.jpeg';
+import Jean from '../images/Jean-Paul El-Nabbout.jpg';
+import femaleUser from '../images/female-user.jpg';
 
 function About() {
   return (
@@ -124,24 +126,25 @@ function About() {
             </div>
             <div className="aboutAvatar">
               <div className="aboutAvatarImg">
-                <img src={Rebeca} alt="" />
+                <img src={Jean} alt="" />
               </div>
-              <h3 className="aboutAvatarName">?</h3>
-              <p className="aboutAvatarDesc">HR</p>
+              <h3 className="aboutAvatarName">
+                Jean-Paul <br /> El-Nabbout
+              </h3>
+              <p className="aboutAvatarDesc">
+                Coordonator HR
+              </p>
             </div>
             <div className="aboutAvatar">
               <div className="aboutAvatarImg">
-                <img src={Rebeca} alt="" />
+                <img src={femaleUser} alt="" />
               </div>
-              <h3 className="aboutAvatarName">?</h3>
-              <p className="aboutAvatarDesc">PR</p>
-            </div>
-            <div className="aboutAvatar">
-              <div className="aboutAvatarImg">
-                <img src={Rebeca} alt="" />
-              </div>
-              <h3 className="aboutAvatarName">?</h3>
-              <p className="aboutAvatarDesc">Foto-Video</p>
+              <h3 className="aboutAvatarName">
+                Maria <br /> Furduescu-Clinc
+              </h3>
+              <p className="aboutAvatarDesc">
+                Coordonator PR
+              </p>
             </div>
           </div>
         </div>

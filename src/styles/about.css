@@ -89,11 +89,17 @@
 .aboutAvatarImg img {
   height: 100%;
   border-radius: 10rem;
+  -webkit-box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.33);
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.33);
 }
 
 .aboutAvatarName {
   line-height: 1.5rem;
   letter-spacing: 2px;
   padding: 0.3rem 0 0 0;
+  text-align: center;
+}
+
+.aboutAvatarDesc {
   text-align: center;
 }
