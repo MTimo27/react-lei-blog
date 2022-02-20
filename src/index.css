@@ -36,7 +36,7 @@ li {
 
 @media only screen and (min-width: 750px) {
   .mainWrapper {
-    min-height: calc(100vh - 174px);
+    min-height: calc(100vh - 171px);
   }
 }
 

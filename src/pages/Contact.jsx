@@ -12,18 +12,12 @@ function Contact() {
           </div>
           <div className="contactText">
             <p>
-              Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Sunt voluptatum molestiae
-              minus. Ipsam perspiciatis cum repudiandae
-              debitis, sapiente error ratione quod beatae
-            </p>
-            <p>
               <span className="bold">Ana Sturzu</span> -
               Presedinte
             </p>
             <p>
               <span className="bold">Telefon: </span>
-              0172637181
+              0750877446
             </p>
             <p>
               <span className="bold">Rebeca Raicu</span> -
@@ -31,11 +25,11 @@ function Contact() {
             </p>
             <p>
               <span className="bold">Telefon: </span>
-              9181228347
+              0744353953
             </p>
             <p>
               <span className="bold">Email: </span>
-              lei@gmail.com
+              ligaeleviloriasi@gmail.com
             </p>
           </div>
         </div>

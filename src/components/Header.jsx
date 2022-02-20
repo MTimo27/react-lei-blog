@@ -64,6 +64,7 @@ function Header() {
       <header className="header">
         <nav className="navbar">
           <Link to="/" className="nav-logo">
+            <img src="/favicon.jpg" alt="" />
             <h1>LEI</h1>
           </Link>
           <ul
@@ -75,7 +76,7 @@ function Header() {
             {[
               { label: 'Acasă', path: '/' },
               { label: 'Despre noi', path: '/about' },
-              { label: 'Proiecte', path: '/projects' },
+              // { label: 'Proiecte', path: '/projects' },
               { label: 'Contact', path: '/contact' },
             ].map(navItemsMap)}
           </ul>

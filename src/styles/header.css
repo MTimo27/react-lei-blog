@@ -33,6 +33,12 @@
   align-items: center;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
+  gap: 0.5rem;
+}
+
+.nav-logo img {
+  width: 2.5rem;
+  border-radius: 50%;
 }
 
 .nav-menu {

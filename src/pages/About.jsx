@@ -3,11 +3,13 @@ import '../styles/about.css';
 import Andreea from '../images/Andreea Cozma.jpeg';
 import Rebeca from '../images/Rebeca Raicu.jpeg';
 import Jean from '../images/Jean-Paul El-Nabbout.jpg';
-import femaleUser from '../images/female-user.jpg';
+import Ana from '../images/Ana Sturzu.jpeg';
+import User from '../images/User.png';
 
 function About() {
   return (
     <>
+      *
       <section className="about">
         <div className="aboutContainer">
           <div className="aboutTitle">
@@ -60,27 +62,20 @@ function About() {
           <div className="aboutTitle">
             <h1>Principii</h1>
           </div>
-          <div className="aboutText">
-            <h2>Lorem:</h2>
+          <div className="aboutText principii">
             <ul>
-              <li>
-                Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Eligendi officiis odio
-                aperiam quos est error dolorum, repudiandae
-                animi?
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Eligendi officiis odio
-                aperiam quos est error dolorum, repudiandae
-                animi?
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Eligendi officiis odio
-                aperiam quos est error dolorum, repudiandae
-                animi?
-              </li>
+              <li>Unitate</li>
+              <li>Corectitudine</li>
+              <li>Integritate</li>
+              <li>Responsabilitate</li>
+              <li>Cunoastere</li>
+            </ul>
+            <ul>
+              <li>Curaj</li>
+              <li>Transparenta</li>
+              <li>Legitimitate</li>
+              <li>Independenta</li>
+              <li>Determinare</li>
             </ul>
           </div>
           <div className="aboutTitle">
@@ -89,7 +84,7 @@ function About() {
           <div className="aboutAvatars">
             <div className="aboutAvatar">
               <div className="aboutAvatarImg">
-                <img src={Rebeca} alt="" />
+                <img src={Ana} alt="" />
               </div>
 
               <h3 className="aboutAvatarName">
@@ -137,7 +132,7 @@ function About() {
             </div>
             <div className="aboutAvatar">
               <div className="aboutAvatarImg">
-                <img src={femaleUser} alt="" />
+                <img src={User} alt="" />
               </div>
               <h3 className="aboutAvatarName">
                 Maria <br /> Furduescu-Clinc
